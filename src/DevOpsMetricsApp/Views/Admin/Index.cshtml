@@ -1,0 +1,179 @@
+﻿@using Microsoft.AspNetCore.Identity
+@model IEnumerable<IdentityUser>
+@inject UserManager<IdentityUser> UserManager
+
+@{
+    ViewData["Title"] = "User Management";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4 mt-4 animate__animated animate__fadeInDown">
+    <h2 class="fw-bold"><i class="fa-solid fa-users-gear text-primary me-2"></i>System Access Management</h2>
+    <a asp-area="Identity" asp-page="/Account/Register" class="btn btn-primary rounded-pill shadow-sm">
+        <i class="fa-solid fa-user-plus me-2"></i>Provision New User
+    </a>
+</div>
+
+<div class="card metric-card shadow-sm bg-white animate__animated animate__fadeInUp">
+    <div class="card-body p-0">
+        <div class="table-responsive table-modern">
+            <table class="table table-hover mb-0 align-middle">
+                <thead>
+                    <tr>
+                        <th class="ps-4 py-3">Email / Username</th>
+                        <th>User ID</th>
+                        <th>Assigned Role</th>
+                        <th>Status</th>
+                        <th class="text-end pe-4">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var user in Model)
+                    {
+                        var roles = await UserManager.GetRolesAsync(user);
+                        var primaryRole = roles.FirstOrDefault() ?? "No Role";
+                        var isLockedOut = await UserManager.IsLockedOutAsync(user);
+
+                        <tr>
+                            <td class="ps-4 fw-semibold">
+                                <i class="fa-regular fa-envelope me-2 text-muted"></i>@user.Email
+                            </td>
+                            <td><span class="badge bg-light text-dark border font-monospace">@user.Id.Substring(0, 8)...</span></td>
+                            <td>
+                                @if (primaryRole == "Administrator")
+                                {
+                                    <span class="badge bg-danger">@primaryRole</span>
+                                }
+                                else if (primaryRole == "TeamLeader")
+                                {
+
+                                    <span class="badge bg-success">@primaryRole</span>
+                                }
+                                else
+                                {
+
+                                    <span class="badge bg-info text-dark">@primaryRole</span>
+                                }
+                            </td>
+                            <td>
+                                @if (isLockedOut)
+                                {
+                                    <span class="text-danger fw-bold"><i class="fa-solid fa-ban fa-sm me-1"></i>Inactive</span>
+                                }
+                                else
+                                {
+                                    <span class="text-success fw-bold"><i class="fa-solid fa-circle-check fa-sm me-1"></i>Active</span>
+                                }
+                            </td>
+                            <td class="text-end pe-4">
+                                <div class="d-inline-flex gap-2">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#editUserModal"
+                                            data-id="@user.Id"
+                                            data-email="@user.Email"
+                                            data-phone="@user.PhoneNumber"
+                                            data-role="@primaryRole"
+                                            title="Edit User">
+                                        <i class="fa-solid fa-pen"></i>
+                                    </button>
+                                    <form asp-action="ToggleStatus" asp-route-id="@user.Id" method="post">
+                                        <button type="submit" class="btn btn-sm @(isLockedOut ? "btn-success" : "btn-warning")" title="@(isLockedOut ? "Activate User" : "Deactivate User")">
+                                            <i class="fa-solid @(isLockedOut ? "fa-unlock" : "fa-lock")"></i>
+                                        </button>
+                                    </form>
+
+                                    <form asp-action="DeleteUser" asp-route-id="@user.Id" method="post" onsubmit="return confirm('Are you sure you want to permanently delete this user?');">
+                                        <button type="submit" class="btn btn-sm btn-danger" @(user.Email == User.Identity?.Name ? "disabled" : "") title="Delete User">
+                                            <i class="fa-solid fa-trash"></i>
+                                        </button>
+                                    </form>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="editUserModal" tabindex="-1" aria-labelledby="editUserModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 shadow-lg rounded-4">
+            <div class="modal-header bg-light border-0 py-3">
+                <h5 class="modal-title fw-bold" id="editUserModalLabel">
+                    <i class="fa-solid fa-user-pen text-primary me-2"></i>Modify User Account
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <form asp-action="EditUser" method="post">
+                <div class="modal-body p-4">
+                    <input type="hidden" id="editUserId" name="Id" />
+
+                    <div class="form-floating mb-3">
+                        <input type="email" id="editUserEmail" name="Email" class="form-control rounded-3" required />
+                        <label for="editUserEmail"><i class="fa-solid fa-envelope me-2 text-muted"></i>Email Address</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input type="text" id="editUserPhone" name="PhoneNumber" class="form-control rounded-3" />
+                        <label for="editUserPhone"><i class="fa-solid fa-phone me-2 text-muted"></i>Phone Number</label>
+                    </div>
+
+                    <div class="form-floating mb-2">
+                        <select id="editUserRole" name="Role" class="form-select rounded-3">
+                            <option value="Developer">Developer</option>
+                            <option value="TeamLeader">Team Leader</option>
+                            <option value="Administrator">Administrator</option>
+                        </select>
+                        <label for="editUserRole"><i class="fa-solid fa-user-tag me-2 text-muted"></i>Assigned Role</label>
+                    </div>
+                </div>
+
+                <div class="modal-footer bg-light border-0">
+                    <button type="button" class="btn btn-outline-secondary rounded-pill px-4" data-bs-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-primary rounded-pill px-4 shadow-sm">
+                        <i class="fa-solid fa-floppy-disk me-2"></i>Save Changes
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        // This script intercepts the modal opening and fills in the user's current data
+        document.addEventListener('DOMContentLoaded', function () {
+            var editModal = document.getElementById('editUserModal');
+            if (editModal) {
+                editModal.addEventListener('show.bs.modal', function (event) {
+                    var button = event.relatedTarget;
+
+                    // Extract info from data-* attributes
+                    var id = button.getAttribute('data-id');
+                    var email = button.getAttribute('data-email');
+                    var phone = button.getAttribute('data-phone');
+                    var role = button.getAttribute('data-role');
+
+                    // Update the modal's input fields
+                    editModal.querySelector('#editUserId').value = id;
+                    editModal.querySelector('#editUserEmail').value = email;
+                    editModal.querySelector('#editUserPhone').value = phone || '';
+
+                    // Set the correct dropdown role
+                    var roleSelect = editModal.querySelector('#editUserRole');
+                    if (roleSelect) {
+                        for (var i = 0; i < roleSelect.options.length; i++) {
+                            if (roleSelect.options[i].value === role) {
+                                roleSelect.selectedIndex = i;
+                                break;
+                            }
+                        }
+                    }
+                });
+            }
+        });
+    </script>
+}
