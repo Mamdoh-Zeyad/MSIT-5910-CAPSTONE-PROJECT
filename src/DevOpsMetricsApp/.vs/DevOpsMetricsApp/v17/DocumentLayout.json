@@ -3,7 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\mamdo\\source\\repos\\Mamdoh-Zeyad\\MSIT-5910-CAPSTONE-PROJECT\\src\\DevOpsMetricsApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5914D324-DF28-48AC-BD15-67D894D44041}|..\\DevOpsMetricsApp.Tests\\DevOpsMetricsApp.Tests.csproj|c:\\users\\mamdo\\source\\repos\\mamdoh-zeyad\\msit-5910-capstone-project\\src\\devopsmetricsapp.tests\\webhookcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{685E8F65-1916-4BCF-ACCD-7A9E0D80BC5D}|DevOpsMetricsApp.csproj|c:\\users\\mamdo\\source\\repos\\mamdoh-zeyad\\msit-5910-capstone-project\\src\\devopsmetricsapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{685E8F65-1916-4BCF-ACCD-7A9E0D80BC5D}|DevOpsMetricsApp.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{685E8F65-1916-4BCF-ACCD-7A9E0D80BC5D}|DevOpsMetricsApp.csproj|c:\\users\\mamdo\\source\\repos\\mamdoh-zeyad\\msit-5910-capstone-project\\src\\devopsmetricsapp\\views\\home\\webhooksettings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{685E8F65-1916-4BCF-ACCD-7A9E0D80BC5D}|DevOpsMetricsApp.csproj|solutionrelative:views\\home\\webhooksettings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{685E8F65-1916-4BCF-ACCD-7A9E0D80BC5D}|DevOpsMetricsApp.csproj|c:\\users\\mamdo\\source\\repos\\mamdoh-zeyad\\msit-5910-capstone-project\\src\\devopsmetricsapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{685E8F65-1916-4BCF-ACCD-7A9E0D80BC5D}|DevOpsMetricsApp.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{685E8F65-1916-4BCF-ACCD-7A9E0D80BC5D}|DevOpsMetricsApp.csproj|c:\\users\\mamdo\\source\\repos\\mamdoh-zeyad\\msit-5910-capstone-project\\src\\devopsmetricsapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{685E8F65-1916-4BCF-ACCD-7A9E0D80BC5D}|DevOpsMetricsApp.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{685E8F65-1916-4BCF-ACCD-7A9E0D80BC5D}|DevOpsMetricsApp.csproj|c:\\users\\mamdo\\source\\repos\\mamdoh-zeyad\\msit-5910-capstone-project\\src\\devopsmetricsapp\\models\\dashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{685E8F65-1916-4BCF-ACCD-7A9E0D80BC5D}|DevOpsMetricsApp.csproj|solutionrelative:models\\dashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{685E8F65-1916-4BCF-ACCD-7A9E0D80BC5D}|DevOpsMetricsApp.csproj|c:\\users\\mamdo\\source\\repos\\mamdoh-zeyad\\msit-5910-capstone-project\\src\\devopsmetricsapp\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{685E8F65-1916-4BCF-ACCD-7A9E0D80BC5D}|DevOpsMetricsApp.csproj|solutionrelative:views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{685E8F65-1916-4BCF-ACCD-7A9E0D80BC5D}|DevOpsMetricsApp.csproj|c:\\users\\mamdo\\source\\repos\\mamdoh-zeyad\\msit-5910-capstone-project\\src\\devopsmetricsapp\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{685E8F65-1916-4BCF-ACCD-7A9E0D80BC5D}|DevOpsMetricsApp.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{685E8F65-1916-4BCF-ACCD-7A9E0D80BC5D}|DevOpsMetricsApp.csproj|c:\\users\\mamdo\\source\\repos\\mamdoh-zeyad\\msit-5910-capstone-project\\src\\devopsmetricsapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{685E8F65-1916-4BCF-ACCD-7A9E0D80BC5D}|DevOpsMetricsApp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{685E8F65-1916-4BCF-ACCD-7A9E0D80BC5D}|DevOpsMetricsApp.csproj|c:\\users\\mamdo\\source\\repos\\mamdoh-zeyad\\msit-5910-capstone-project\\src\\devopsmetricsapp\\services\\predictionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{685E8F65-1916-4BCF-ACCD-7A9E0D80BC5D}|DevOpsMetricsApp.csproj|solutionrelative:services\\predictionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -13,23 +46,123 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "WebhookControllerTests.cs",
-              "DocumentMoniker": "C:\\Users\\mamdo\\source\\repos\\Mamdoh-Zeyad\\MSIT-5910-CAPSTONE-PROJECT\\src\\DevOpsMetricsApp.Tests\\WebhookControllerTests.cs",
-              "RelativeDocumentMoniker": "..\\DevOpsMetricsApp.Tests\\WebhookControllerTests.cs",
-              "ToolTip": "C:\\Users\\mamdo\\source\\repos\\Mamdoh-Zeyad\\MSIT-5910-CAPSTONE-PROJECT\\src\\DevOpsMetricsApp.Tests\\WebhookControllerTests.cs",
-              "RelativeToolTip": "..\\DevOpsMetricsApp.Tests\\WebhookControllerTests.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAgwBsAAAA+AAAAAAAAAA==",
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\mamdo\\source\\repos\\Mamdoh-Zeyad\\MSIT-5910-CAPSTONE-PROJECT\\src\\DevOpsMetricsApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\mamdo\\source\\repos\\Mamdoh-Zeyad\\MSIT-5910-CAPSTONE-PROJECT\\src\\DevOpsMetricsApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABwAAAAAAAAAAAAYwCkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-01T11:53:11.644Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WebhookSettings.cshtml",
+              "DocumentMoniker": "C:\\Users\\mamdo\\source\\repos\\Mamdoh-Zeyad\\MSIT-5910-CAPSTONE-PROJECT\\src\\DevOpsMetricsApp\\Views\\Home\\WebhookSettings.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\WebhookSettings.cshtml",
+              "ToolTip": "C:\\Users\\mamdo\\source\\repos\\Mamdoh-Zeyad\\MSIT-5910-CAPSTONE-PROJECT\\src\\DevOpsMetricsApp\\Views\\Home\\WebhookSettings.cshtml",
+              "RelativeToolTip": "Views\\Home\\WebhookSettings.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-01T11:52:46.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\mamdo\\source\\repos\\Mamdoh-Zeyad\\MSIT-5910-CAPSTONE-PROJECT\\src\\DevOpsMetricsApp\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Index.cshtml",
+              "ToolTip": "C:\\Users\\mamdo\\source\\repos\\Mamdoh-Zeyad\\MSIT-5910-CAPSTONE-PROJECT\\src\\DevOpsMetricsApp\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIgAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-01T11:45:17.118Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\mamdo\\source\\repos\\Mamdoh-Zeyad\\MSIT-5910-CAPSTONE-PROJECT\\src\\DevOpsMetricsApp\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\mamdo\\source\\repos\\Mamdoh-Zeyad\\MSIT-5910-CAPSTONE-PROJECT\\src\\DevOpsMetricsApp\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-27T18:09:07.078Z",
+              "WhenOpened": "2026-05-01T11:44:18.597Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\mamdo\\source\\repos\\Mamdoh-Zeyad\\MSIT-5910-CAPSTONE-PROJECT\\src\\DevOpsMetricsApp\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\mamdo\\source\\repos\\Mamdoh-Zeyad\\MSIT-5910-CAPSTONE-PROJECT\\src\\DevOpsMetricsApp\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-01T11:43:59.894Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PredictionService.cs",
+              "DocumentMoniker": "C:\\Users\\mamdo\\source\\repos\\Mamdoh-Zeyad\\MSIT-5910-CAPSTONE-PROJECT\\src\\DevOpsMetricsApp\\Services\\PredictionService.cs",
+              "RelativeDocumentMoniker": "Services\\PredictionService.cs",
+              "ToolTip": "C:\\Users\\mamdo\\source\\repos\\Mamdoh-Zeyad\\MSIT-5910-CAPSTONE-PROJECT\\src\\DevOpsMetricsApp\\Services\\PredictionService.cs",
+              "RelativeToolTip": "Services\\PredictionService.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAwEEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-01T11:43:28.032Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\mamdo\\source\\repos\\Mamdoh-Zeyad\\MSIT-5910-CAPSTONE-PROJECT\\src\\DevOpsMetricsApp\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\mamdo\\source\\repos\\Mamdoh-Zeyad\\MSIT-5910-CAPSTONE-PROJECT\\src\\DevOpsMetricsApp\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAYwIgAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-01T11:41:40.529Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\mamdo\\source\\repos\\Mamdoh-Zeyad\\MSIT-5910-CAPSTONE-PROJECT\\src\\DevOpsMetricsApp\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\mamdo\\source\\repos\\Mamdoh-Zeyad\\MSIT-5910-CAPSTONE-PROJECT\\src\\DevOpsMetricsApp\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAiwGcAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-01T11:41:30.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DashboardViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\mamdo\\source\\repos\\Mamdoh-Zeyad\\MSIT-5910-CAPSTONE-PROJECT\\src\\DevOpsMetricsApp\\Models\\DashboardViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\DashboardViewModel.cs",
+              "ToolTip": "C:\\Users\\mamdo\\source\\repos\\Mamdoh-Zeyad\\MSIT-5910-CAPSTONE-PROJECT\\src\\DevOpsMetricsApp\\Models\\DashboardViewModel.cs",
+              "RelativeToolTip": "Models\\DashboardViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-01T11:40:18.266Z",
               "EditorCaption": ""
             }
           ]

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using DevOpsMetricsApp.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -9,15 +10,18 @@ namespace DevOpsMetricsApp.Controllers
     public class AdminController : Controller
     {
         private readonly UserManager<IdentityUser> _userManager;
+        private readonly PredictionService _predictionService;
 
-        public AdminController(UserManager<IdentityUser> userManager)
+        public AdminController(UserManager<IdentityUser> userManager, PredictionService predictionService)
         {
             _userManager = userManager;
+            _predictionService = predictionService;
         }
 
         public async Task<IActionResult> Index()
         {
-            var users = await _userManager.Users.ToListAsync();
+            ViewBag.PredictedBuildTime = await _predictionService.PredictNextBuildDurationAsync();
+            var users = _userManager.Users.ToList();
             return View(users);
         }
 
